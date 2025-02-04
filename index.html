@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,6 +34,10 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "dark-1": "#111111",
+              "dark-2": "#414040",
+              "dark-3": "#707070",
+              "dark-4": "#A0A0A0",
             },
             fontFamily: {
               eb: ["EB Garamond", "serif"],
@@ -45,7 +49,59 @@
     </script>
   </head>
   <body>
-    <header></header>
+    <header class="container mx-auto px-5 md:px-0">
+      <!-- Navbar start from here -->
+      <nav>
+        <div class="navbar font-poppins">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+              <li><a class="text-base text-dark-3 capitalize">Home</a></li>
+              <li><a class="text-base text-dark-3 capitalize"><span>services</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a class="text-base text-dark-3 flex items-center gap-1 capitalize"><span>cases</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a class="text-base text-dark-3 flex items-center gap-1 capitalize"><span>blog</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a class="text-base text-dark-3 capitalize"><span>contact us</span></a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">
+                <img src="./images/logo2.png" alt="">
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-base text-dark-3 capitalize">Home</a></li>
+              <li><a class="text-base text-dark-3 capitalize"><span>services</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a class="text-base text-dark-3 flex items-center gap-1 capitalize"><span>cases</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a class="text-base text-dark-3 flex items-center gap-1 capitalize"><span>blog</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a class="text-base text-dark-3 capitalize"><span>contact us</span></a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="bg-[#B68C5A] rounded-lg text-white text-sm md:text-lg px-4 py-2 md:px-7 md:py-5 hover:translate-x-2 hover:translate-y-2 duration-300">Free Consultation</button>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end here -->
+    </header>
     <main></main>
     <footer></footer>
   </body>
